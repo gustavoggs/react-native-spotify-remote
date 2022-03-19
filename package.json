@@ -54,7 +54,7 @@
     "react-native": ">=0.60"
   },
   "dependencies": {
-    "react-native-events": "^1.0.21"
+    "react-native-events": "git@github.com:gustavoggs/react-native-events.git"
   },
   "devDependencies": {
     "@release-it/keep-a-changelog": "^2.2.2",
