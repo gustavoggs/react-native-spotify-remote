@@ -60,6 +60,7 @@ public class RNSpotifyRemoteAppModule extends ReactContextBaseJavaModule {
             public void onConnected(SpotifyAppRemote spotifyAppRemote) {
                 mSpotifyAppRemote = spotifyAppRemote;
                 handleEventSubscriptions();
+                switchToLocalDevice();
                 while (!mConnectPromises.empty()) {
                     Promise promise = mConnectPromises.pop();
                     promise.resolve(true);
@@ -83,6 +84,10 @@ public class RNSpotifyRemoteAppModule extends ReactContextBaseJavaModule {
                 sendEvent(EventNameRemoteDisconnected, null);
             }
         };
+    }
+
+    private void switchToLocalDevice() {
+        mSpotifyAppRemote.getContentApi().connectSwitchToLocalDevice();
     }
 
     private void sendEvent(String eventName,
