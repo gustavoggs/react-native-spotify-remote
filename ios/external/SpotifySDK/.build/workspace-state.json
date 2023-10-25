@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "spotifysdk",
+          "kind" : "root",
+          "location" : "/Users/ahmed/Developer/iOS/react-native-spotify-remote/ios/external/SpotifySDK",
+          "name" : "SpotifySDK"
+        },
+        "path" : "/Users/ahmed/Developer/iOS/react-native-spotify-remote/ios/external/SpotifySDK/SpotifyiOS.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "SpotifyiOS"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}
